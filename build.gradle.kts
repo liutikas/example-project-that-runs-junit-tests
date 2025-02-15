@@ -17,6 +17,6 @@ kotlin {
     jvmToolchain(21)
 }
 
- tasks.withType<Test>().configureEach {
-     reports.junitXml.required = true
- }
+tasks.withType<Test>().configureEach {
+    reports.junitXml.required = true
+}

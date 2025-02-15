@@ -1,6 +1,7 @@
 package org.example
 
 import org.junit.Assume
+import org.junit.Ignore
 import org.junit.Test
 
 class MyTest {
@@ -16,6 +17,12 @@ class MyTest {
 
     @Test
     fun doingATestThatPasses() {
+        assert(true)
+    }
+
+    @Ignore
+    @Test
+    fun doingATestThatIsSkipped() {
         assert(true)
     }
 }
